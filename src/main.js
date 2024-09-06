@@ -1,9 +1,4 @@
-import LoadingScene from './game/scenes/LoadingScene.js';
-import MainMenuScene from './game/scenes/MainMenuScene.js';
-//import GameSettingsScene from './game/scenes/GameSettingsScene';
-//import SettingsScene from './game/scenes/SettingsScene';
-//import PauseMenuScene from './game/scenes/PauseMenuScene';
-//import EndGameScene from './game/scenes/EndGameScene';
+
 
 // Game configuration
 var config = {

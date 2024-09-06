@@ -2,7 +2,7 @@ class MainMenuScene extends Phaser.Scene {
     constructor() {
         super('MainMenuScene');
     }
-
+/*
     create() {
         // Add main menu text
         this.add.text(config.width / 2 , 100, 'Main Menu', { fontSize: '32px', fill: '#fff' }).setOrigin(0.5);
@@ -21,4 +21,5 @@ class MainMenuScene extends Phaser.Scene {
             this.scene.start('SettingsScene'); // Transition to settings scene
         });
     }
+*/
 }
