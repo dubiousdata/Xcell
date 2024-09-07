@@ -3,7 +3,7 @@
 // Game configuration
 var config = {
     type: Phaser.AUTO,
-    width: 400,
+    width: 800,
     height: 600,
 	backgroundColor: '#000000',
     physics: {
@@ -13,12 +13,13 @@ var config = {
         }
     },
     scene: [
-        LoadingScene,        // Initial scene that preloads assets
-        MainMenuScene,       // Main menu scene
-        //GameSettingsScene,   // Game-specific settings scene
-        //SettingsScene,       // General settings scene
-        //PauseMenuScene,      // Pause menu scene
-        //EndGameScene         // End game scene
+        LoadingScene,        	// Initial scene that preloads assets
+        MainMenuScene,       	// Main menu scene
+        GameSettingsScene,   	// Game-specific settings scene
+        //SettingsScene,       	// General settings scene
+        //PauseMenuScene,      	// Pause menu scene
+		GameScene,				//Gameplay scene
+        //EndGameScene         	// End game scene
     ]
 };
 
