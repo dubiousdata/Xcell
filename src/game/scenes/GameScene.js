@@ -29,7 +29,7 @@ class GameScene extends Phaser.Scene {
                 if (row < gridSize - 1) {
                     const x = offsetX + col * squareSize;
                     const y = offsetY + row * squareSize;
-                    const horizontalEdge = this.add.line(0, 0, x, y, x + squareSize, y, 0xffffff).setOrigin(0, 0).setInteractive();
+                    const horizontalEdge = this.add.line(0, 0, x, y, x + squareSize, y, 0xff0000).setOrigin(0, 0).setInteractive();
                     this.horizontalEdges[row][col] = horizontalEdge;
                     
                     // Add click event for horizontal edges
