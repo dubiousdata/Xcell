@@ -6,7 +6,7 @@ class GameScene extends Phaser.Scene {
     create() {
         const gridSize = 8;    // Size of the grid (8x8 grid)
         const squareSize = 64; // Size of each square in pixels
-
+/*
         // Total width and height of the grid
         const gridWidth = (gridSize - 1) * squareSize;
         const gridHeight = (gridSize - 1) * squareSize;
@@ -14,7 +14,7 @@ class GameScene extends Phaser.Scene {
         // Center the grid
         const offsetX = (this.scale.width - gridWidth) / 2;
         const offsetY = (this.scale.height - gridHeight) / 2;
-
+*/
         // Arrays to store edge data
         this.horizontalEdges = [];
         this.verticalEdges = [];
@@ -38,7 +38,7 @@ class GameScene extends Phaser.Scene {
                 horizontalEdge.on('pointerdown', () => this.handleEdgeClick(horizontalEdge, 'horizontal', row, col));
 
                 // Vertical edge (between two points vertically)
-                const verticalEdge = this.add.line(0, 0, x, y, x, y + squareSize, 0xffffff)
+                const verticalEdge = this.add.line(0, 0, x, y, x, y + squareSize, 0x00ff00)
                     .setOrigin(0, 0)
                     .setInteractive();
                 this.verticalEdges[row][col] = verticalEdge;
