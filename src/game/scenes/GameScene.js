@@ -29,7 +29,7 @@ class GameScene extends Phaser.Scene {
                 const x = offsetX + col * squareSize;
                 const y = offsetY + row * squareSize;
 
-                const horizontalEdge = this.add.line(0, 0, x, y, x + squareSize, y, 0xffffff)
+                const horizontalEdge = this.add.line(0, 0, x, y, x + squareSize, y, 0x00ff00)
                     .setOrigin(0, 0)
                     .setInteractive();
                 this.horizontalEdges[row][col] = horizontalEdge;
